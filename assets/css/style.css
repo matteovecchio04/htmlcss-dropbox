@@ -39,12 +39,19 @@
     }
 }
 
-main {
-    section {
-        width: 100%;
-        height: 100%;
-        background-color: var(--drop-light-color);
-    }
+
+.jumbotron {
+    width: 100%;
+    height: 100%;
+    background-color: var(--drop-light-color);
+    border-bottom: 1px solid grey;
+    margin-bottom: 6rem;
+
+}
+
+.pay-plan {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -71,21 +78,34 @@ main {
         position: absolute;
         top: 38%;
         left: 45%;
-
     }
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+
+    .rad {
+        accent-color: var(--drop-btn-color);
+        display: inline-block;
+    }
+}
+
 
 .box-35 {
     width: 35%;
 
-    p{
+    p {
         margin-bottom: 2rem;
         margin-top: 2rem;
     }
 
-    a{
+    a {
         text-decoration: none;
-        &:hover{
+
+        &:hover {
             text-decoration: underline;
         }
     }
@@ -120,3 +140,13 @@ h1 {
     font-size: 45px;
     margin-bottom: 10px;
 }
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+label{
+    margin-right: 1.5rem;
+}
+
