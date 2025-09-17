@@ -4,7 +4,7 @@
     }
 
     header {
-        background-color: orange;
+        background-color: lightcoral;
     }
 
 }
@@ -65,6 +65,10 @@
     justify-content: space-between;
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
 .container-big {
     display: flex;
     flex-direction: column;
@@ -83,16 +87,37 @@
 
 .container {
     display: flex;
-    flex-direction: column;
     width: 50%;
     margin: auto;
+    margin-bottom: 3rem;
 
     .rad {
         accent-color: var(--drop-btn-color);
-        display: inline-block;
+    }
+
+    .card{
+        width: 30%;
+        height: 100%;
+
+        .card-head{
+            text-align: center;
+            padding: 0.5rem 1rem;
+        }
+
+        .card-body{
+            padding: 1rem;
+            padding-bottom: 8rem;
+
+            i.fa-check{
+                color: var(--drop-btn-color);
+            }
+        }
     }
 }
 
+.border{
+    border: 1px solid gray;
+}
 
 .box-35 {
     width: 35%;
@@ -120,6 +145,11 @@
     padding: 0.4rem;
     background-color: var(--drop-btn-color);
     color: var(--drop-white-color);
+    text-decoration: none;
+
+    &:hover {
+            text-decoration: underline;
+        }
 }
 
 /* common */
@@ -134,11 +164,11 @@
     --drop-white-color: #ffffff;
     --drop-black-color: #000000;
     --drop-light-color: #b4d0e6;
+    --drop-gray-color: gray;
 }
 
 h1 {
     font-size: 45px;
-    margin-bottom: 10px;
 }
 
 h2 {
@@ -146,7 +176,29 @@ h2 {
     margin-bottom: 2rem;
 }
 
-label{
+h3{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.div-line{
+    border-bottom: 1px solid gray;
+    width: 30%;
+}
+
+label {
     margin-right: 1.5rem;
 }
 
+.gray-txt{
+    color: var(--drop-gray-color);
+    margin-bottom: 2rem;
+}
+
+.mar-bot{
+    margin-bottom: 10px;
+}
+
+.mar-bot-big{
+    margin-bottom: 2rem;
+}
