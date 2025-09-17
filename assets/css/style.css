@@ -95,27 +95,27 @@
         accent-color: var(--drop-btn-color);
     }
 
-    .card{
+    .card {
         width: 30%;
         height: 100%;
 
-        .card-head{
+        .card-head {
             text-align: center;
             padding: 0.5rem 1rem;
         }
 
-        .card-body{
+        .card-body {
             padding: 1rem;
-            padding-bottom: 8rem;
 
-            i.fa-check{
+            i.fa-check {
                 color: var(--drop-btn-color);
             }
+
         }
     }
 }
 
-.border{
+.border {
     border: 1px solid gray;
 }
 
@@ -148,8 +148,8 @@
     text-decoration: none;
 
     &:hover {
-            text-decoration: underline;
-        }
+        text-decoration: underline;
+    }
 }
 
 /* common */
@@ -176,12 +176,12 @@ h2 {
     margin-bottom: 2rem;
 }
 
-h3{
+h3 {
     font-size: 20px;
     font-weight: 900;
 }
 
-.div-line{
+.div-line {
     border-bottom: 1px solid gray;
     width: 30%;
 }
@@ -190,15 +190,15 @@ label {
     margin-right: 1.5rem;
 }
 
-.gray-txt{
+.gray-txt {
     color: var(--drop-gray-color);
     margin-bottom: 2rem;
 }
 
-.mar-bot{
+.mar-bot {
     margin-bottom: 10px;
 }
 
-.mar-bot-big{
+.mar-bot-big {
     margin-bottom: 2rem;
 }
