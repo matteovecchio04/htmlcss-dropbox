@@ -13,28 +13,45 @@
     display: flex;
     padding: 1rem;
 
-    a {
-        text-decoration: none;
-        color: var(--drop-black-color);
-        padding-right: 1rem;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
     .menu-left {
         align-items: center;
+
+        a {
+            text-decoration: none;
+            color: var(--drop-black-color);
+            padding-right: 1rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
     }
 
     .menu-right {
         align-items: center;
+
+        a {
+            text-decoration: none;
+            color: var(--drop-black-color);
+            padding-right: 1rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+        }
 
         .btn {
             border: 1px solid transparent;
             padding: 0.4rem;
             background-color: var(--drop-btn-color);
             color: var(--drop-white-color);
+
+            &:hover {
+                text-decoration: none;
+            }
+
         }
     }
 }
@@ -69,17 +86,17 @@
     flex-direction: column;
 }
 
-.wrap{
+.wrap {
     flex-wrap: wrap;
 }
 
-.card-block{
+.card-block {
     width: 30%;
 
-    .card-head{
+    .card-head {
         width: 100%;
 
-        .img{
+        .img {
             max-width: 100%;
         }
     }
@@ -103,6 +120,8 @@
 
 .container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     width: 50%;
     margin: auto;
     margin-bottom: 3rem;
@@ -138,11 +157,11 @@
 
     .card {
         width: 30%;
-        height: 100%;
 
         .card-head {
             text-align: center;
             padding: 0.5rem 1rem;
+            border-bottom: 1px solid grey;
         }
 
         .card-body {
@@ -171,15 +190,28 @@
 
     a {
         text-decoration: none;
+    }
+
+    .btn-clear {
+        border: 1px solid var(--drop-black-color);
+        padding: 0.4rem;
+        text-decoration: none;
+        color: var(--drop-black-color);
 
         &:hover {
-            text-decoration: underline;
+            opacity: 60%;
+            ;
         }
     }
 }
 
-.box-65 {
-    width: 65%;
+.box-55 {
+    width: 55%;
+
+    .img {
+        width: 500px;
+        max-width: 100%;
+    }
 }
 
 .btn {
@@ -190,7 +222,8 @@
     text-decoration: none;
 
     &:hover {
-        text-decoration: underline;
+        opacity: 60%;
+        ;
     }
 }
 
@@ -232,6 +265,10 @@ h3 {
     text-align: center;
 }
 
+.align-middle {
+    align-items: center;
+}
+
 label {
     margin-right: 1.5rem;
 }
@@ -247,4 +284,8 @@ label {
 
 .mar-bot-big {
     margin-bottom: 2rem;
+}
+
+.pad-top-big{
+    padding-top: 5rem;
 }
