@@ -69,6 +69,22 @@
     flex-direction: column;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
+.card-block{
+    width: 30%;
+
+    .card-head{
+        width: 100%;
+
+        .img{
+            max-width: 100%;
+        }
+    }
+}
+
 .container-big {
     display: flex;
     flex-direction: column;
